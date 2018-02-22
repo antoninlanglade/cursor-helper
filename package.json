@@ -1,7 +1,7 @@
 {
   "name": "cursor-helper",
   "amdName": "CursorHelper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Cursor utility implementing all the different behaviors with priority between components",
   "source": "src/index.js",
   "main": "dist/mymodule.js",

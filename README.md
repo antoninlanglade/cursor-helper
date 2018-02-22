@@ -30,7 +30,7 @@ $ yarn add cursor-helper
 import CursorHelper from 'cursor-helper' // ES6 module import
 const CursorHelper = require('cursor-helper') // CommonJS module import
 
-// Declaring a new cursor behavior test at index 10
+// Declaring a new cursor behavior cursor-example at index 10
 const key = 'cursor-example'
 CursorHelper.add(key, 10)
 // Set cursor for this cursor
@@ -54,3 +54,7 @@ CursorHelper.remove(key)
 
 ## License
 MIT.
+
+## Package
+
+Packaged with https://github.com/pqml/brique :heart:

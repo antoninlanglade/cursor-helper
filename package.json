@@ -32,7 +32,10 @@
   },
   "homepage": "https://github.com/antoninlanglade/cursor-helper#readme",
   "dependencies": {
-    "lodash": "^4.17.5"
+    "lodash.findindex": "^4.6.0",
+    "lodash.foreach": "^4.5.0",
+    "lodash.remove": "^4.7.0",
+    "lodash.sortby": "^4.7.0"
   },
   "devDependencies": {
     "eslint": "^4.18.0",

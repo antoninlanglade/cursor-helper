@@ -1,7 +1,7 @@
-import forEach from 'lodash/forEach'
-import sortBy from 'lodash/sortBy'
-import findIndex from 'lodash/findIndex'
-import removeArray from 'lodash/remove'
+import forEach from 'lodash.foreach'
+import sortBy from 'lodash.sortby'
+import findIndex from 'lodash.findindex'
+import removeArray from 'lodash.remove'
 
 import CURSORS from './cursors'
 

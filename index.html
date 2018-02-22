@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>cursor-helper</title>
+    <meta name="description" content="description">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimal-ui">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+
+    <link href="//fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+    <link href="//cdn.jsdelivr.net/npm/@ajusa/lit@1.0.0/dist/lit.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  </head>
+  <body class="c">
+    <script src="cursor-helper.umd.js"></script>
+    <script>
+      var db = ['default', 'context-menu', 'help', 'pointer', 'progress', 'wait', 'cell', 'crosshair', 'text', 'vertical-text', 'alias', 'copy', 'move', 'no-drop', 'not-allowed', 'all-scroll', 'col-resize', 'row-resize', 'grab', 'grabbing', 'n-resize', 'e-resize', 's-resize', 'w-resize', 'ne-resize', 'nw-resize', 'se-resize', 'sw-resize', 'ew-resize', 'ns-resize', 'nesw-resize', 'nwse-resize', 'zoom-in', 'zoom-out'];
+      var index = 0;
+      var key = 'cursor-example';
+      CursorHelper.add(key, 10);
+
+      setInterval(function() {
+        CursorHelper.setCursor(key, db[index]);
+        if (index < db.length - 1) index++
+        else index = 0
+      }, 500);
+    </script>
+
+      <h2>cursor-helper</h2>
+      <h5><a href="https://github.com/antoninlanglade/cursor-helper">→ View cursor-helper on github</a></h5><br>
+      <pre>// Declaring a new cursor behavior cursor-example at index 10<br/>const key = 'cursor-example'<br/>CursorHelper.add(key, 10)</pre>
+      <pre>// Set cursor for this cursor<br/>CursorHelper.setCursor(key, 'grab');</pre>
+  </body>
+</html>

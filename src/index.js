@@ -55,7 +55,6 @@ function setCursor (key, state) {
       return true
     } else {
       document.body.classList.add(item.state)
-      console.log(document.body.style.cursor)
       return false
     }
   })

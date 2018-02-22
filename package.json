@@ -1,0 +1,49 @@
+{
+  "name": "cursor-helper",
+  "amdName": "CursorHelper",
+  "version": "0.0.1",
+  "description": "Cursor utility implementing all the different behaviors with priority between components",
+  "source": "src/index.js",
+  "main": "dist/mymodule.js",
+  "module": "dist/mymodule.m.js",
+  "unpkg": "dist/mymodule.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "microbundle watch -f umd -o example --target browser & light-server -s example -p 8080 -w example/**/*",
+    "build": "microbundle -f es,cjs --external all && microbundle -f umd --target browser",
+    "test": "eslint src/**",
+    "deploy": "ghp example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:antoninlanglade/cursor-helper.git"
+  },
+  "keywords": [
+    "rollup",
+    "bundle",
+    "microbundle"
+  ],
+  "author": "Antonin Langlade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antoninlanglade/cursor-helper/issues"
+  },
+  "homepage": "https://github.com/antoninlanglade/cursor-helper#readme",
+  "dependencies": {
+    "lodash": "^4.17.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "ghp": "^1.1.4",
+    "light-server": "^2.4.0",
+    "microbundle": "^0.4.3"
+  },
+  "private": false
+}
